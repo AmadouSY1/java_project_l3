@@ -1,0 +1,7 @@
+LMD:
+user( id,login,password,role)
+profeseur(id,nomcomplet,grade,nci)
+inscription( id,dateinscription,etudiant_id,classe_id)
+etudiant(id,nomcomplet,tuteur,matricule)
+classe( id,libelle)
+professeur_classe(id,professeur_id,classe_id)

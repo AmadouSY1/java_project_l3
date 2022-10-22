@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="592.0" style="-fx-background-color: silver;" stylesheets="@../style/Style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ecole221.schoolproject.controllers.ConnexionController">
+   <children>
+      <Pane layoutX="56.0" layoutY="80.0" prefHeight="287.0" prefWidth="480.0" style="-fx-background-color: yellow;">
+         <children>
+            <Text fill="#23079e" layoutX="43.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" wrappingWidth="67.443359375">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtLogin" layoutX="39.0" layoutY="113.0" prefHeight="31.0" prefWidth="213.0" style="-fx-background-color: silver;" />
+            <Text fill="#23079e" layoutX="44.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="txtPassword" layoutX="39.0" layoutY="200.0" prefHeight="31.0" prefWidth="213.0" style="-fx-background-color: silver;" />
+            <Button layoutX="363.0" layoutY="242.0" mnemonicParsing="false" onAction="#handleConnexion" text="Connexion">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Text fill="#23079e" layoutX="107.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Formulaire de Connexion">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="lblErrors" fill="#d00a0a" layoutX="41.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="login ou mot de passe incorrect">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
